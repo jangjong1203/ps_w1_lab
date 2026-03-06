@@ -8,16 +8,22 @@ int main(){
     scanf("%d",&size);
     for(i=0;i<size;i++){
         for(j=0;j<size*2;j++){
-            if(j==i||j==9-i){
+            if(j==i||j==size*2-1-i){
                 printf("*");
             }else{
                 printf(" ");
             }
         }
+        
         printf("\n");
     }
 
-
+    for(i=0;i<size;i++){
+        for(j=0;j<size*2;j++){         
+            printf("*");        
+        }
+        printf("\n");
+    }
 
     return 0;
 }
