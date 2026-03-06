@@ -25,5 +25,18 @@ int main(){
         printf("\n");
     }
 
+    for(i=0;i<size;i++){
+        for(j=0;j<size*2;j++){
+            if(j>=i&&j<=size*2-1-i){
+                printf("*");
+            }else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(i=0;i<size*2;i++){
+        printf("*");
+    }
     return 0;
 }
